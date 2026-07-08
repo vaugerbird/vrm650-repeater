@@ -26,26 +26,26 @@ If you want to build the exact thing I built, buy (almost) everything on this li
 * **2** - Motorola VRM650, Model **F3451A** (450-512 MHz)
   * Must be that exact model number, otherwise the radio will be in the 800 MHz range. See [this document](../external/VRMInfo.pdf) for a more in-depth model number list
 * **2** - Motorola HLN6412A connector (Optional)
-  * Only required if you want the offical connector for this radio, but is pricy and hard to find. I will explain how to use a normal DB25 later.
+  * Only required if you want the official connector for this radio, but is pricy and hard to find. I will explain how to use a normal DB25 in [Wiring](./wiring.md).
 
 ---
 
 ### Amazon
 * **Required Radio Parts**
   * **1** - [MaxtonData RLN4008B RIB](https://www.amazon.com/dp/B0F5LFQNLM/)
-    * This is __required__ for programming the VRM650/VRM850/MCS2000. RIB-less cables have a low success rate, and do not exist for the VRM series. Alternatives are available for cheaper from other sellers, but this is the one I used and works well for me.
+    * This is __required__ for programming the VRM650/VRM850/MCS2000. RIB-less cables have a low success rate, and do not exist for the VRM series. Alternative RIBs are available for cheaper from other sellers, but this is the one I used and works well for me.
   * **1** - [USB to RS232 Cable](https://www.amazon.com/dp/B006AA04K0/)
-    * I used an old Plugable PL2303-based cable, but FTDI-based cables are recommended for reliability, especially on Windows 11. The serial port created by this cable will be passed through to a Windows XP VM, which will be explained later.
+    * I used an old Plugable PL2303-based cable, but FTDI-based cables are recommended for reliability, especially on Windows 11. The serial port created by this cable will be passed through to a Windows XP VM, which will be explained in [Configuration](./config.md).
   * **1** - [9V DC Power Supply](https://www.amazon.com/dp/B077XPLH92/) (Optional)
     * This eliminates the need for a 9V battery in the RIB, and feels safer than possibly having a battery die during a program write. 
     * Make sure that the connector is center positive if you use a different supply!
   * **2** - [2-pin SAE Power Cables](https://www.amazon.com/dp/B0DNCM9D2T/)
-    * I personally used a different cable from my work, but this is an easier option with a built in fuse holder. Watch the polarity on other cables, the red wire should be on the insulated side of the connector.
+    * I personally used a different cable from the store I work at, but this is an easier option with a built-in fuse holder. Note the polarity on other cables, the red wire should be on the insulated side of the connector.
     * If using the fuse holder listed later, I would recommend cutting off the built-in fuse holder and crimping new rings.
   * **4** - [DB25 Female Connectors](https://www.amazon.com/dp/B0841FCNJ9/) (Pack of 6)
     * The required quantity changes if the HLN6412A connectors are used. If not using the HLN6412A, 2 connectors will be required to build the MMDVM to radios Y-cable.
     * 2 connectors will be required no matter what to build the RIB-to-radio cable.
-  * **1** - [DB9 Male Connector](https://www.amazon.com/dp/B09BZ4YZ9R) (Pack of 18)
+  * **1** - [DB9 Male Connector](https://www.amazon.com/dp/B09BZ4YZ9R) (Pack of 18(!))
     * Only needed if using the [Repeater Builder STM32_DVM](#others)
 
 
@@ -54,7 +54,7 @@ If you want to build the exact thing I built, buy (almost) everything on this li
     * This thing is made out of *absolute crap*, but that means it's perfect for chopping up into a repeater housing. "Modifications" required can be found in the [Assembly](./assy.md) page.
   * **1** - [I/O Shield Blank](https://www.amazon.com/dp/B09HXDHX16/) (Pack of 2)
     * I used this to fill the I/O shield hole where the motherboard would normally be, and mounted the Type N panel mounts for the antennas on here.
-    * **SHARP METAL** - Be extremely careful if drilling into this panel. If the drill catches, the shield will spin and **WILL** severely cut you. Ensure the I/O shield is properly clamped before drilling, and **DO NOT UNDER ANY CIRCUMSTANCES** hold the I/O shield while drilling. 
+    * **SHARP METAL** - Be extremely careful if drilling into this panel. If the drill bit catches, the shield can spin and **WILL** severely cut you. Ensure the I/O shield is properly clamped down before drilling, and **DO NOT UNDER ANY CIRCUMSTANCES** hold the I/O shield while drilling. 
     * This part could be omitted if a 3D printed version was created. If I were to create one, I would make it be secured with screws around the edge for rigidity, and make the connector hole a feature of the part.
   * **1** - [Very Cheap PC Power Supply](https://www.amazon.com/dp/B08FLVGVHN/)
     * This one is a bit strange, I just used this to harvest the rear panel as a filler. I saved the rear panel itself, C14 socket, power switch, and cooling fan. Required PSU butchering can be found in the [Assembly](./assy.md) page.
@@ -100,14 +100,14 @@ If you want to build the exact thing I built, buy (almost) everything on this li
     | B+ (1 GB)| 1 GB | 2 W |
     | A+ (512 MB) | 2 GB | |
 
-    *The Pi Zero (1st Gen) will not work with newer releases of WPSD and is generally too slow for what is needed. A model 2 W is required if using a Zero.
+    *The Pi Zero (1st Gen) will not work with newer releases of WPSD and is generally too slow for what is needed. A Pi Zero 2 W is required if using a Zero.
   * The table headers link to rpilocator, which aggrigates stock and prices for different vendors. Click whichever model you're interested in to see stock and prices.
 
 * MMDVM
   * There are plenty of options for this, but really only 2 good options exist:
     * [Repeater Buildser STM32_DVM](https://www.repeater-builder.com/products/stm32-dvm.html) - $95 + S&H (at time of writing)
     * [ZUM Radio MMDVM-Pi](https://zumradio.com/products.html#mmdvm-pi) - $99.95 + S&H (at time of writing)
-  * Personally, I have had *terrible* luck with the MMDVM-Pi and would certainlly recommend the STM32_DVM. I used the MMDVM-Pi for my build as I had a semi-broken one left over from another repeater. This guide will go over setup of both MMDVM options to the best of my ability.
+  * Personally, I have had *terrible* luck with the MMDVM-Pi and would certainly recommend the STM32_DVM. I used the MMDVM-Pi for my build as I had a semi-broken one left over from another repeater, but prefer working with the STM32_DVM from my experience. This guide will go over setup of both MMDVM options to the best of my ability.
 
 ---
 
