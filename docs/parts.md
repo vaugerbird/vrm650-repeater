@@ -23,9 +23,9 @@ If you want to build the exact thing I built, buy (almost) everything on this li
 ---
 
 ### eBay
-* **2** - Motorola VRM650, Model **F3451A** (450-512 MHz)
+* **2** - [Motorola VRM650](https://www.ebay.com/sch/i.html?_nkw=motorola+F3451A), Model **F3451A** (450-512 MHz)
   * Must be that exact model number, otherwise the radio will be in the 800 MHz range. See [this document](../external/VRMInfo.pdf) for a more in-depth model number list
-* **2** - Motorola HLN6412A connector (Optional)
+* **2** - [Motorola HLN6412A Connector](https://www.ebay.com/sch/i.html?_nkw=Motorola+HLN6412A) (Optional)
   * Only required if you want the official connector for this radio, but is pricy and hard to find. I will explain how to use a normal DB25 in [Wiring](./wiring.md).
 
 ---
@@ -47,6 +47,8 @@ If you want to build the exact thing I built, buy (almost) everything on this li
     * 2 connectors will be required no matter what to build the RIB-to-radio cable.
   * **1** - [DB9 Male Connector](https://www.amazon.com/dp/B09BZ4YZ9R) (Pack of 18(!))
     * Only needed if using the [Repeater Builder STM32_DVM](#others)
+  * **~2 ft** - [24 AWG 6P Ribbon Cable](https://www.amazon.com/dp/B099W8RD5K/) (Roll of 5 ft)
+    * Only needed if using the [Repeater Builder STM32_DVM](#others). Used for the cables from the MMDVM to the radios.
 
 
 * **Optional Chasis Parts**
@@ -55,7 +57,7 @@ If you want to build the exact thing I built, buy (almost) everything on this li
   * **1** - [I/O Shield Blank](https://www.amazon.com/dp/B09HXDHX16/) (Pack of 2)
     * I used this to fill the I/O shield hole where the motherboard would normally be, and mounted the Type N panel mounts for the antennas on here.
     * **SHARP METAL** - Be extremely careful if drilling into this panel. If the drill bit catches, the shield can spin and **WILL** severely cut you. Ensure the I/O shield is properly clamped down before drilling, and **DO NOT UNDER ANY CIRCUMSTANCES** hold the I/O shield while drilling. 
-    * This part could be omitted if a 3D printed version was created. If I were to create one, I would make it be secured with screws around the edge for rigidity, and make the connector hole a feature of the part.
+    * A crude 3D-printable version of this is available [here](../3d-files/IO%20Panel/). This has not yet been tested. The 6 holes should fit an M4 machine screw, and a washer on each side of the panel to hold it in.
   * **1** - [Very Cheap PC Power Supply](https://www.amazon.com/dp/B08FLVGVHN/)
     * This one is a bit strange, I just used this to harvest the rear panel as a filler. I saved the rear panel itself, C14 socket, power switch, and cooling fan. Required PSU butchering can be found in the [Assembly](./assy.md) page.
     * This part could (and should) also be omitted with a 3D printed panel, with features for the C14 socket, switch, and RJ45 panel mount included. 
@@ -141,8 +143,8 @@ These are the random bits and bobs that I used throughout this project.
   * **2** - Black 15/30/45A Powerpole Housings (AC Input Cable)
   * **2** - Green 15/30/45A Powerpole Housings (AC Input Cable)
   * **6** - 15A Powerpole Pins (AC Input Cable)
-  * **~2ft** - 16 AWG Black Silicone Wire (AC Input Cable)
-  * **~2ft** - 16 AWG White Silicone Wire (AC Input Cable)
-  * **~2ft** - 16 AWG Green Silicone Wire (AC Input Cable)
+  * **~2 ft** - 16 AWG Black Silicone Wire (AC Input Cable)
+  * **~2 ft** - 16 AWG White Silicone Wire (AC Input Cable)
+  * **~2 ft** - 16 AWG Green Silicone Wire (AC Input Cable)
   * Solder
   * Asstorted heat shrink for all wires and ring terminals.
