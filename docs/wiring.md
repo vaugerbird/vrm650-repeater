@@ -9,6 +9,8 @@ This section of the guide will go over how to wire up the various cables and int
 * [Part 1: Power Cables](#part-1-power-cables)
 * [Part 2: Programming Cable](#part-2-programming-cable)
 * [Part 3: MMDVM Cables](#part-3-mmdvm-cables)
+    * [MMDVM-Pi](#mmdvm-pi)
+    * [STM32_DVM](#stm32_dvm)
 * [Part 4: Front Panel Cables (Optional)](#part-4-front-panel-cables-optional)
 
 ---
@@ -71,7 +73,7 @@ Parts required:
 #### MMDVM-Pi
 
 1. Follow [Step 1 in Part 2](#assembly-steps) with 2 of the DB25 connectors, one for the RX radio and one for the TX radio.
-2. Using the cable provided with the MMDVM-Pi, follow the schematic shown to connect the DB25 connectors. Connected pin numbers are in the table. Make sure pins 4 and 9 are connected together.
+2. Using the cable provided with the MMDVM-Pi, follow the schematic shown to connect the DB25 connectors. Connected pin numbers are in the table. Make sure pins 4 and 9 are connected together on each connector.
     
     ![Schematic of VRM650 to MMDVM-Pi cable](../src/mmdvm-pi.png)
 
@@ -89,7 +91,7 @@ Parts required:
 #### STM32_DVM
 
 1. Follow [Step 1 in Part 2](#assembly-steps) with 2 of the DB25 connectors, one for the RX radio and one for the TX radio.
-2. Using the piece of ribbon cable and the DB9 male connector, follow the schematic shown to connect the DB25 connectors. Connected pin numbers are in the table. Make sure pins 4 and 9 are connected together.
+2. Using the piece of ribbon cable and the DB9 male connector, follow the schematic shown to connect the DB25 connectors. Connected pin numbers are in the table. Make sure pins 4 and 9 are connected together on each connector.
     
     ![Schematic of VRM650 to MMDVM-Pi cable](../src/stm32_dvm.png)
 
