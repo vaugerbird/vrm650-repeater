@@ -36,13 +36,6 @@ Tools required to complete this section:
 
 ## Part 2: Programming Cable
 
-The programming cable for the VRM radio is comprised of 3 parts:
-* VRM to RIB cable
-* RIB with DB9 Serial Cable
-* Serial to USB Converter Cable
-
-Thankfully, the only thing we need to assemble is the VRM to RIB cable, as that's the only generally unavailable part.
-
 Parts required:
 * **2** - DB25 Female Connectors
 * Any length of 5 (or more) conductor cable

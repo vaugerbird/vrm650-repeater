@@ -20,8 +20,9 @@ If you want to build the exact thing I built, buy (almost) everything on this li
 * [eBay](#ebay)
 * [Amazon](#amazon)
 * [Other Suppliers](#others)
-* [Tools](#odds-and-ends)
+* [3D Printed](#3d-printed-parts)
 * [Odds and Ends](#odds-and-ends)
+  * [Tools](#odds-and-ends)
 
 ---
 
@@ -126,12 +127,16 @@ These are the random bits and bobs that I used throughout this project.
 * Tools:
   * Drill
   * Screwdriver Kit
-  * Step Drill Bit
   * Drill Bit Index
-  * Vice-grips (for pulling standoffs, see [Assembly](./assy.md))
+  * Locking Pliers (for pulling standoffs, see [Assembly](./assy.md))
+  * Hammer
+  * Punch
   * Soldering Iron
   * Die Grinder (for butchering PSU, see [Assembly](./assy.md). Can also be done with tin snips.)
   * Multimeter
+  * Terminal Crimper
+  * Powerpoel Crimper
+  * Heat gun
 * Hardware:
   * **6** - M4 x 6mm Cap Head Screws (I/O Panel)
   * **4** - M4 x 10mm Cap Head Screws (Power Supply)
