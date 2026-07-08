@@ -1,5 +1,7 @@
 # Wiring
-
+---
+### Previous Page: [Assembly](./assy.md)
+---
 This section of the guide will go over how to wire up the various cables and interconnects required to power, program, and control the radios.
 
 ---
@@ -17,6 +19,13 @@ This section of the guide will go over how to wire up the various cables and int
 
 ## Part 0: Tools Required
 
+Tools required to complete this section:
+* Wire Strippers (12-18 AWG, 24 AWG)
+* Soldering Iron
+* Heat Gun or Lighter/Torch
+* #0 Philips Screwdriver
+* Powerpole Crimper
+* Insulated Terminal Crimper
 
 ---
 
@@ -40,7 +49,7 @@ Parts required:
     * I used an old chunk of CAT5 and used 5 of the 8 conductors. Really anything should work well for what we're doing.
 
 #### Assembly Steps
-1. Before beginning soldering, take the DB25 for the VRM and bend the side tabs toward the back of the connector. This is required to make the connector to fit into the body of the radio.
+1. Before beginning soldering, take the DB25 for the VRM and bend the side tabs toward the back of the connector. This is required to make the connector fit into the body of the radio.
     * [Image here]
 2. Solder the cable to both connectors following the schematic, with connected pin numbers in the table:
 
@@ -54,7 +63,7 @@ Parts required:
     | Pin 12 | Pin 14 | Blue |
     | Pin 15 | Pin 6 | Magenta |
 
-    **Note**: Make sure pins 4 and 9 are connected to eachother on the VRM side, otherwise the radio will enter emergency mode and will not respond to any buttons or programming.
+    **Note**: Make sure pins 4 and 9 are connected to eachother on the VRM side, otherwise the radio will enter emergency mode and will not respond to input.
 
 ---
 
@@ -91,7 +100,7 @@ Parts required:
 #### STM32_DVM
 
 1. Follow [Step 1 in Part 2](#assembly-steps) with 2 of the DB25 connectors, one for the RX radio and one for the TX radio.
-2. Using the piece of ribbon cable and the DB9 male connector, follow the schematic shown to connect the DB25 connectors. Connected pin numbers are in the table. Make sure pins 4 and 9 are connected together on each connector.
+2. Using the piece of ribbon cable and the DB9 male connector from the parts list, follow the schematic shown to connect the DB25 connectors. Connected pin numbers are in the table. Make sure pins 4 and 9 are connected together on each connector.
     
     ![Schematic of VRM650 to MMDVM-Pi cable](../src/stm32_dvm.png)
 
@@ -110,3 +119,7 @@ Parts required:
 ---
 
 ## Part 4: Front Panel Cables (Optional)
+
+---
+### Next Page: [Configuration](./config.md)
+---

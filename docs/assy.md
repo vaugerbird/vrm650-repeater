@@ -1,11 +1,15 @@
 # Assembly
+---
+### Previous Page: [Parts and Materials](./parts.md)
+---
 This section of the guide will go over how to assemble the repeater into the [2U case](./parts.md/#amazon). This section can be skipped if a different case is used or the radios mounted differently.
 
 ---
 
-### Table of contents:
+## Table of contents:
 * [Part 0: Tools Needed](#part-0-tools-needed)
 * [Part 1: Case Prep](#part-1-case-prep)
+* [Part 2: Top Panel Prep](#part-2-top-panel-prep)
 
 ---
 
@@ -39,3 +43,8 @@ Tools required to complete this section, with some examples linked:
 5. Reinstall the 2 front panel fans. 
 
 ## Part 2: Top Panel Prep
+
+
+---
+### Next Page: [Wiring](./wiring.md)
+---

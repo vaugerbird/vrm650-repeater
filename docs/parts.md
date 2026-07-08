@@ -1,4 +1,7 @@
 # Parts and Materials
+---
+### Previous Page: [README](../README.md)
+---
 
 For this part of the guide, I will break down where I got each part, how many were used, and the general purpose of the part. 
 
@@ -13,7 +16,7 @@ If you want to build the exact thing I built, buy (almost) everything on this li
 
 ---
 
-### Table of Contents:
+## Table of Contents:
 * [eBay](#ebay)
 * [Amazon](#amazon)
 * [Other Suppliers](#others)
@@ -153,3 +156,7 @@ These are the random bits and bobs that I used throughout this project.
   * **~2 ft** - 16 AWG Green Silicone Wire (AC Input Cable)
   * Solder
   * Asstorted heat shrink for all wires and ring terminals.
+
+---
+### Next Page: [Assembly](./assy.md)
+---
