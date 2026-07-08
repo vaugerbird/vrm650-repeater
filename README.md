@@ -5,7 +5,7 @@ A repository of docs on how to build a DMR repeater using VRM650 radios
 ### Table of contents:
 
 1. [Parts and materials](./docs/parts.md)
-2. ~~[Assembly](./docs/assy.md)~~
+2. [Assembly](./docs/assy.md)
 3. ~~[Wiring](./docs/wiring.md)~~
 4. ~~[Configuration](./docs/config.md)~~
 5. ~~[Testing and tuning](./docs/tune.md)~~

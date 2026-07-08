@@ -43,7 +43,7 @@ If you want to build the exact thing I built, buy (almost) everything on this li
     * I personally used a different cable from the store I work at, but this is an easier option with a built-in fuse holder. Note the polarity on other cables, the red wire should be on the insulated side of the connector.
     * If using the fuse holder listed later, I would recommend cutting off the built-in fuse holder and crimping new rings.
   * **4** - [DB25 Female Connectors](https://www.amazon.com/dp/B0841FCNJ9/) (Pack of 6)
-    * The required quantity changes if the HLN6412A connectors are used. If not using the HLN6412A, 2 connectors will be required to build the MMDVM to radios Y-cable.
+    * The required quantity changes if the HLN6412A connectors are used. If not using the HLN6412A, 2 connectors will be required to build the Y-cable to connect the MMDVM to the radios.
     * 2 connectors will be required no matter what to build the RIB-to-radio cable.
   * **1** - [DB9 Male Connector](https://www.amazon.com/dp/B09BZ4YZ9R) (Pack of 18(!))
     * Only needed if using the [Repeater Builder STM32_DVM](#others)
@@ -101,7 +101,7 @@ If you want to build the exact thing I built, buy (almost) everything on this li
   * The table headers link to rpilocator, which aggrigates stock and prices for different vendors. Click whichever model you're interested in to see stock and prices.
 
 * MMDVM
-  * There are plenty of options for this, but really only 2 good options exist:
+  * Really only 2 good options exist for repeaters:
     * [Repeater Buildser STM32_DVM](https://www.repeater-builder.com/products/stm32-dvm.html) - $95 + S&H (at time of writing)
     * [ZUM Radio MMDVM-Pi](https://zumradio.com/products.html#mmdvm-pi) - $99.95 + S&H (at time of writing)
   * Personally, I have had *terrible* luck with the MMDVM-Pi and would certainly recommend the STM32_DVM. I used the MMDVM-Pi for my build as I had a semi-broken one left over from another repeater, but prefer working with the STM32_DVM from my experience. This guide will go over setup of both MMDVM options to the best of my ability.
