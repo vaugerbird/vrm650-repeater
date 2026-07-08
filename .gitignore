@@ -1,1 +1,3 @@
 typos.toml
+*.FCBak
+./3d-files/*.FCBak

@@ -54,10 +54,6 @@ If you want to build the exact thing I built, buy (almost) everything on this li
 * **Optional Chasis Parts**
   * **1** - [2U Server PC Case](https://www.amazon.com/dp/B0D41ZJH3D/)
     * This thing is made out of *absolute crap*, but that means it's perfect for chopping up into a repeater housing. "Modifications" required can be found in the [Assembly](./assy.md) page.
-  * **1** - [I/O Shield Blank](https://www.amazon.com/dp/B09HXDHX16/) (Pack of 2)
-    * I used this to fill the I/O shield hole where the motherboard would normally be, and mounted the Type N panel mounts for the antennas on here.
-    * **SHARP METAL** - Be extremely careful if drilling into this panel. If the drill bit catches, the shield can spin and **WILL** severely cut you. Ensure the I/O shield is properly clamped down before drilling, and **DO NOT UNDER ANY CIRCUMSTANCES** hold the I/O shield while drilling. 
-    * A crude 3D-printable version of this is available [here](../3d-files/IO%20Panel/). This has not yet been tested. The 6 holes should fit an M4 machine screw, and a washer on each side of the panel to hold it in.
   * **1** - [Very Cheap PC Power Supply](https://www.amazon.com/dp/B08FLVGVHN/)
     * This one is a bit strange, I just used this to harvest the rear panel as a filler. I saved the rear panel itself, C14 socket, power switch, and cooling fan. Required PSU butchering can be found in the [Assembly](./assy.md) page.
     * This part could (and should) also be omitted with a 3D printed panel, with features for the C14 socket, switch, and RJ45 panel mount included. 
@@ -75,7 +71,6 @@ If you want to build the exact thing I built, buy (almost) everything on this li
     * Only needed if using PL-259 cables to connect to the repeater.
   * **1** - [PWM Fan Controller with Temp Sensor](https://www.amazon.com/dp/B0GWV4XNXY/) (Pack of 2)
     * Used to automatically ramp up the 80mm fans included with the enclosure when the TX radio warms up.
-
 
 
 * **Optional Pi Chassis Parts**
@@ -112,6 +107,15 @@ If you want to build the exact thing I built, buy (almost) everything on this li
   * Personally, I have had *terrible* luck with the MMDVM-Pi and would certainly recommend the STM32_DVM. I used the MMDVM-Pi for my build as I had a semi-broken one left over from another repeater, but prefer working with the STM32_DVM from my experience. This guide will go over setup of both MMDVM options to the best of my ability.
 
 ---
+## 3D Printed Parts
+
+* **1** - [I/O Shield Filler](../3d-files/IO%20Panel/IOPanel.stl)
+  * This is needed to fill the hole where the I/O shield would be on a PC motherboard. The filler has mounting holes for the 2 panel mount Type N connectors.
+  * Please excuse the poor 3D model quality, I still am very inexperienced with FreeCAD.
+
+
+
+---
 
 ## Odds and Ends
 
@@ -126,10 +130,11 @@ These are the random bits and bobs that I used throughout this project.
   * Die Grinder (for butchering PSU, see [Assembly](./assy.md). Can also be done with tin snips.)
   * Multimeter
 * Hardware:
-  * **4** - M4 x ??mm Cap Head Screws (Power Supply)
-  * **4** - M4 x ??mm Cap Head Screws (Fuse Block)
-  * **4** - M4 Nuts
-  * **8** - M4 Flat Washers
+  * **6** - M4 x 6mm Cap Head Screws (I/O Panel)
+  * **4** - M4 x 10mm Cap Head Screws (Power Supply)
+  * **4** - M4 x 18mm Cap Head Screws (Fuse Block)
+  * **10** - M4 Nuts
+  * **14** - M4 Flat Washers
   * **8** - M3 x 8mm FLat Head Hex Screws (Type N Panel Mounts)
   * **8** - M3 Washers 
   * **8** - M3 Nuts
