@@ -135,7 +135,7 @@ These are the random bits and bobs that I used throughout this project.
   * Die Grinder (for butchering PSU, see [Assembly](./assy.md). Can also be done with tin snips.)
   * Multimeter
   * Terminal Crimper
-  * Powerpoel Crimper
+  * Powerpole Crimper
   * Heat gun
 * Hardware:
   * **6** - M4 x 6mm Cap Head Screws (I/O Panel)
